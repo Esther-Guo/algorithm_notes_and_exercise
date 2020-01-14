@@ -1,5 +1,5 @@
 `include <stdio.h>` 等价于 `include <cstdio>`，推荐后一种  
-绝对值在 10<sup>9</sup> 以内的整数均可定义为int型（4 Bytes）。否则使用long long。%d
+绝对值在 10<sup>9</sup> 以内的整数均可定义为int型（4 Bytes）。否则使用long long。%lld
 若long long型数据的初值大于2<sup>31</sup>-1，则后面加LL。  
 单精度float的有效精度为6~7位， 双精度double为15~16位。建议浮点数全部使用double存储。%f  
 小写字母比大写字母的ASCII值大32。  

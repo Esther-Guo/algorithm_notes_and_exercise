@@ -1,6 +1,9 @@
 // http://codeup.cn/problem.php?cid=100000575&pid=1
 
-/*字符‘4’转数字4，ASCII减去48*/
+/*
+字符‘4’转数字4，ASCII减去48
+多点检测要时刻注意每次循环后的变量初始化
+*/
 
 #include <cstdio>
 #include <cstring>
