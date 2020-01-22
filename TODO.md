@@ -3,6 +3,8 @@
 [x]chap3-3.5-C(大数运算)
 [x]chap3-3.6-C
 [x]chap4-4.2 B
+[x]chap4-4.3 C
+[x]chap4-4.3 permutation
 
 ### 经典题目
 [x]日期处理：chap3-3.4-A
