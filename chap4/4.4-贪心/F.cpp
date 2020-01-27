@@ -1,8 +1,7 @@
-// 尚未通过
 // http://codeup.cn/problem.php?cid=100000584&pid=5
 
 /*
-
+添加溶液时计算浓度不是简单地除以二，还应考虑体积的关系。
 */
 
 #include <cstdio>
@@ -25,15 +24,17 @@ int main() {
 			printf("0 0.00\n");
 			continue;
 		}
-		double ans_W = P[0]/100.0;
+		double ans_W = P[0];
 		int ans_V = V;
 		for (int i=1;i<n;i++){
-			if ((ans_W+P[i])/2 <= W){
-				ans_W  =  (ans_W+P[i]/100.0)/2;
+			double temp = (ans_W * ans_V + P[i] * V) / (ans_V + V);
+			if (temp <= W){
+				ans_W  =  temp;
 				ans_V += V;
 			}
 			else break;
 		}
+		ans_W = ans_W/100.0;
 		printf("%d %.2f\n", ans_V, ans_W);
 	}
 	return 0;

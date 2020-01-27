@@ -1,18 +1,18 @@
-`include <stdio.h>` µÈ¼ÛÓÚ `include <cstdio>`£¬ÍÆ¼öºóÒ»ÖÖ  
-¾ø¶ÔÖµÔÚ 10<sup>9</sup> ÒÔÄÚµÄÕûÊý¾ù¿É¶¨ÒåÎªintÐÍ£¨4 Bytes£©¡£·ñÔòÊ¹ÓÃlong long¡£%lld
-Èôlong longÐÍÊý¾ÝµÄ³õÖµ´óÓÚ2<sup>31</sup>-1£¬ÔòºóÃæ¼ÓLL¡£  
-µ¥¾«¶ÈfloatµÄÓÐÐ§¾«¶ÈÎª6~7Î»£¬ Ë«¾«¶ÈdoubleÎª15~16Î»¡£½¨Òé¸¡µãÊýÈ«²¿Ê¹ÓÃdouble´æ´¢¡£%f  
-Ð¡Ð´×ÖÄ¸±È´óÐ´×ÖÄ¸µÄASCIIÖµ´ó32¡£Êý×Ö×Ö·û±ÈÊý×Ö´ó48.  
-×Ö·û³£Á¿£¨µ¥¸ö×Ö·û£©±ØÐëÓÃµ¥ÒýºÅÀ¨ÆðÀ´¡£char %c  
-\0 ´ú±í¿Õ×Ö·û£¬ASCIIÂëÎª0.  
-×Ö·û´®³£Á¿¿ÉÒÔÓÃË«ÒýºÅ±ê¼Ç²¢×÷Îª³õÖµ¸³¸ø×Ö·û³£Á¿**Êý×é**¡£Ê¹ÓÃ%sÊä³ö¡£  
-Ç¿ÖÆÀàÐÍ×ª»»£º(ÐÂÀàÐÍÃû)±äÁ¿Ãû  
-·ûºÅ³£Á¿£¨ºêÌæ»»£©£º`#define pi 3.14` == `const double pi = 3.14;` ÍÆ¼öÊ¹ÓÃconstÐ´·¨  
-ÕûÐÍÊý¾ÝÏà³ý/£¬½á¹ûÏòÏÂÈ¡Õû¡£  
-ÎÞÇî´óµÄÊý INF ¿ÉÒÔÉèÖÃÎª const int INF = (1 << 30 - 1) »ò 0x3fffffff£¬¼´2<sup>30</sup>-1¡£
-a << x ×óÒÆÔËËã·û£º½«Êýa°´¶þ½øÖÆÎ»×óÒÆxÎ»¡£  
+`include <stdio.h>` ç­‰ä»·äºŽ `include <cstdio>`ï¼ŒæŽ¨èåŽä¸€ç§  
+ç»å¯¹å€¼åœ¨ 10<sup>9</sup> ä»¥å†…çš„æ•´æ•°å‡å¯å®šä¹‰ä¸ºintåž‹ï¼ˆ4 Bytesï¼‰ã€‚å¦åˆ™ä½¿ç”¨long longã€‚%lld
+è‹¥long longåž‹æ•°æ®çš„åˆå€¼å¤§äºŽ2<sup>31</sup>-1ï¼Œåˆ™åŽé¢åŠ LLã€‚  
+å•ç²¾åº¦floatçš„æœ‰æ•ˆç²¾åº¦ä¸º6~7ä½ï¼Œ åŒç²¾åº¦doubleä¸º15~16ä½ã€‚å»ºè®®æµ®ç‚¹æ•°å…¨éƒ¨ä½¿ç”¨doubleå­˜å‚¨ã€‚%f  
+å°å†™å­—æ¯æ¯”å¤§å†™å­—æ¯çš„ASCIIå€¼å¤§32ã€‚æ•°å­—å­—ç¬¦æ¯”æ•°å­—å¤§48.  
+å­—ç¬¦å¸¸é‡ï¼ˆå•ä¸ªå­—ç¬¦ï¼‰å¿…é¡»ç”¨å•å¼•å·æ‹¬èµ·æ¥ã€‚char %c  
+\0 ä»£è¡¨ç©ºå­—ç¬¦ï¼ŒASCIIç ä¸º0.  
+å­—ç¬¦ä¸²å¸¸é‡å¯ä»¥ç”¨åŒå¼•å·æ ‡è®°å¹¶ä½œä¸ºåˆå€¼èµ‹ç»™å­—ç¬¦å¸¸é‡**æ•°ç»„**ã€‚ä½¿ç”¨%sè¾“å‡ºã€‚  
+å¼ºåˆ¶ç±»åž‹è½¬æ¢ï¼š(æ–°ç±»åž‹å)å˜é‡å  
+ç¬¦å·å¸¸é‡ï¼ˆå®æ›¿æ¢ï¼‰ï¼š`#define pi 3.14` == `const double pi = 3.14;` æŽ¨èä½¿ç”¨constå†™æ³•  
+æ•´åž‹æ•°æ®ç›¸é™¤/ï¼Œç»“æžœå‘ä¸‹å–æ•´ã€‚  
+æ— ç©·å¤§çš„æ•° INF å¯ä»¥è®¾ç½®ä¸º const int INF = (1 << 30 - 1) æˆ– 0x3fffffffï¼Œå³2<sup>30</sup>-1ã€‚
+a << x å·¦ç§»è¿ç®—ç¬¦ï¼šå°†æ•°aæŒ‰äºŒè¿›åˆ¶ä½å·¦ç§»xä½ã€‚  
 n /= (m+1) <==> n = n/(m+1)  
-|Êý¾ÝÀàÐÍ | ¸ñÊ½·û |
+|æ•°æ®ç±»åž‹ | æ ¼å¼ç¬¦ |
 |:---|----|
 |int|%d|
 |long long|%lld|
@@ -20,44 +20,44 @@ n /= (m+1) <==> n = n/(m+1)
 |double|%lf|
 |char|%c|
 |string|%s| 
-ps: Ö»ÓÐ scanf("%s", str) ²»ÐèÒª&È¡Ö··û  
-Ê¹ÓÃprintfÊ±doubleµÄÊä³ö¸ñÊ½·ûÊÇ%f£¬ÐèÁíÍâ¼ÇÒä.  
-ÐèÒªÊä³ö%»ò\Ê±Òª¶îÍâÔÙ¼ÓÒ»¸ö%»ò\¡£  
-%md¿ÉÒÔÊ¹²»×ãmÎ»µÄÕûÐÍÊý¾ÝÒÔmÎ»½øÐÐÓÒ¶ÔÆëÊä³ö£¬¸ßÎ»Ê¹ÓÃ¿Õ¸ñ²¹Æë¡£ÒÑ³¬³ömÎ»µÄÊý¾ÝÊä³ö²»±ä¡£  
-%0md½«²»×ãmÎ»Êý¾ÝµÄ¸ßÎ»ÓÃ0²¹Æë¡£  
-%.mfÈÃ¸¡µãÊý±£ÁômÎ»Ð¡ÊýÊä³ö£¨ËÄÉáÁùÈëÎå³ÉË«£©¡£  
-×¢ÊÍ·û£º/**/ or //  
-±ðÃû£º typedef long long LL; //¿ÉÒÔÊ¹ÓÃLL´úÌælong long  
-³£ÓÃmathº¯Êý£º
-* fabs(double) È¡¾ø¶ÔÖµ
-* floor(double) ceil(double) ÏòÏÂ/ÉÏÈ¡Õû£¬·µ»ØdoubleÐÍ floor(-5.2) = -6
-* pow(double r, double p) ·µ»Ør<sup>p</sup>
-* sqrt(double x) ·µ»ØËãÊõÆ½·½¸ù
-* log(double) ·µ»ØÒÔ×ÔÈ»¶ÔÊýÎªµ×µÄ¶ÔÊý log(1.0) = 0.000000 Èôµ×ÊýÎªÆäËûÖµ£¬ÔòÊ¹ÓÃ»»µ×¹«Ê½×ª»»ÎªÒÔ×ÔÈ»¶ÔÊýÎªµ×¡£log<sub>a</sub>b = log<sub>e</sub>b / log<sub>e</sub>a
-* sin(double), sin(double), tan(double) ²ÎÊýÐèÎª»¡¶ÈÖÆ. piµÄ¾«È·ÖµÎª asin(-1.0)
-* round(double) ·µ»ØËÄÉáÎåÈëµÄdoubleÐÍÕûÊý£¬¿ÉÒÔÊ¹ÓÃ(int)È¡Õû¡£
-Èç¹ûÊý×éÒ»¿ªÊ¼Ã»ÓÐ¸³³õÖµ£¬Êý×éÖÐµÄÃ¿¸öÔªËØ¶¼»áÊÇÒ»¸öËæ»úÊý¡£int a[10] = {0} or int a[10] = {} ½«ËùÓÐÔªËØ³õÊ¼»¯Îª0.  
-Èç¹ûÊý×é½Ï´ó£¨10<sup>6</sup>£©£¬Ó¦½«Êý×é¶¨ÒåÔÚÖ÷º¯ÊýÍâ¡£  
-Ê¹ÓÃmemset¶ÔÊý×éÔªËØ¸³ÏàÍ¬³õÖµ£º#include <cstring> memset(Êý×éÃû£¬Öµ£¬sizeof(Êý×éÃû)) ´Ë·½·¨Ö»½¨Òé¸³0»ò-1.  
-gets(), puts()ÓÃÓÚÊäÈëÊä³öÒ»¸ö×Ö·û´®£¬Ê¶±ð\n×÷Îª½áÊø±êÖ¾¡£  
-Ê¹ÓÃÒÔÏÂº¯ÊýÊ±ÐèÒªÔÚ¿ªÍ·¼Ó #include <cstring>
-* strlen(×Ö·ûÊý×é) µÃµ½×Ö·ûÊý×éµÚÒ»¸ö\0Ç°×Ö·ûµÄ¸öÊý
-* strcmp(×Ö·ûÊý×é1, ×Ö·ûÊý×é2) ¸ù¾Ý×ÖµäÐò±È½Ï£¬ÈôÊý×é1<Êý×é2£¬Ôò·µ»Ø¸ºÕûÊý£»ÏàÍ¬Ôò·µ»Ø0£»>Ôò·µ»ØÕýÕûÊý¡£ 
-* strcpy(×Ö·ûÊý×é1, ×Ö·ûÊý×é2) °Ñ×Ö·ûÊý×é2¸³Öµ¸ø×Ö·ûÊý×é1£¬°üÀ¨Ä©Î²\0¡£
-* strcat(×Ö·ûÊý×é1, ×Ö·ûÊý×é2) °Ñ×Ö·ûÊý×é2½Óµ½×Ö·ûÊý×é1ºó¡£
-sscanf(str, "%d", &n); °ÑstrµÄÄÚÈÝÒÔ%dµÄÐÎÊ½·ÅÈënÖÐ¡£
-sprintf(str, "%d", n); °ÑnµÄÄÚÈÝÒÔ%dµÄÐÎÊ½·ÅÈëstrÖÐ¡£printf("%s", str);½«strÊä³ö¡£  
-Êý×é×÷Îª²ÎÊý£¬Êý×éµÄµÚÒ»Î¬²»ÐèÒªÌîÐ´³¤¶È£¬µ÷ÓÃÊ±Ö»ÌîÊý×éÃû¡£ÇÒº¯ÊýÖÐ¶ÔÊý×éµÄÐÞ¸Ä¾ÍÊÇ¶ÔÔ­Êý×éµÄÐÞ¸Ä¡£  
-Êý×é²»¿ÉÒÔ×÷Îª·µ»ØÀàÐÍ¡£  
-Ö¸Õë±äÁ¿ÓÃÀ´´æ·ÅÖ¸Õë¡£¸øÖ¸Õë±äÁ¿¸³ÖµµÄÒ»°ã·½Ê½ÊÇ½«±äÁ¿µÄµØÖ·È¡³öÀ´£¬¸³¸ø¶ÔÓ¦ÀàÐÍµÄÖ¸Õë±äÁ¿¡£int* p = &a; -> a==*p  
-¶ÔÓÚÒ»¸öint*ÐÍµÄÖ¸Õë±äÁ¿pÀ´Ëµ£¬p+1ÊÇÖ¸pËùÖ¸µÄintÐÍ±äÁ¿µÄÏÂÒ»¸öintÐÍ±äÁ¿µÄµØÖ·¡£  
-¶ÔÓÚintÐÍÊý×é£¬ÆäÖÐµÄÔªËØÔÚµØÖ·ÉÏ¶¼ÊÇÁ¬ÐøµÄ¡£È¡µØÖ·£º&arr[i]  
-Êý×éÃû³Æ¿ÉÒÔ×÷ÎªÊ×¸öÔªËØµÄµØÖ·Ê¹ÓÃ£¬¼´ arr = &arr[0], arr+i = &arr[i]  
-Á½¸öintÐÍÖ¸ÕëÏà¼õ£¬µÃµ½µÄ½á¹ûÊÇÁ½¸öÖ¸ÕëÖ®¼ä²îÁË¼¸¸öintÔªËØ£¬¶ø·ÇµØÖ·Ö±½ÓÏà¼õ¡£  
-Ö¸Õë±äÁ¿×÷Îªº¯Êý²ÎÊý£¬Èç¹û¸ÃÖ¸Õë¶ÔÓ¦µÄÔªËØÔÚº¯ÊýÖÐ±»ÐÞ¸Ä£¬¸ÃÔªËØ¾ÍÕæµÄ±»ÐÞ¸ÄÁË¡£  
-ÒýÓÃµÄ×÷ÓÃÊÇ¸øÔ­±äÁ¿Æð±ðÃû£¬²»²úÉú¸±±¾£¬¶ÔÒýÓÃµÄ²Ù×÷¾ÍÊÇ¶ÔÔ­±äÁ¿µÄ²Ù×÷¡£  
-¹¹Ôìº¯Êý£º²»ÐèÒª·µ»ØÀàÐÍ£¬º¯ÊýÃûÓë½á¹¹ÌåÃûÏàÍ¬¡£  
-±ÜÃâ¸¡µãÊýÎó²î£º
+ps: åªæœ‰ scanf("%s", str) ä¸éœ€è¦&å–å€ç¬¦  
+ä½¿ç”¨printfæ—¶doubleçš„è¾“å‡ºæ ¼å¼ç¬¦æ˜¯%fï¼Œéœ€å¦å¤–è®°å¿†.  
+éœ€è¦è¾“å‡º%æˆ–\æ—¶è¦é¢å¤–å†åŠ ä¸€ä¸ª%æˆ–\ã€‚  
+%mdå¯ä»¥ä½¿ä¸è¶³mä½çš„æ•´åž‹æ•°æ®ä»¥mä½è¿›è¡Œå³å¯¹é½è¾“å‡ºï¼Œé«˜ä½ä½¿ç”¨ç©ºæ ¼è¡¥é½ã€‚å·²è¶…å‡ºmä½çš„æ•°æ®è¾“å‡ºä¸å˜ã€‚  
+%0mdå°†ä¸è¶³mä½æ•°æ®çš„é«˜ä½ç”¨0è¡¥é½ã€‚  
+%.mfè®©æµ®ç‚¹æ•°ä¿ç•™mä½å°æ•°è¾“å‡ºï¼ˆå››èˆå…­å…¥äº”æˆåŒï¼‰ã€‚  
+æ³¨é‡Šç¬¦ï¼š/**/ or //  
+åˆ«åï¼š typedef long long LL; //å¯ä»¥ä½¿ç”¨LLä»£æ›¿long long  
+å¸¸ç”¨mathå‡½æ•°ï¼š
+* fabs(double) å–ç»å¯¹å€¼
+* floor(double) ceil(double) å‘ä¸‹/ä¸Šå–æ•´ï¼Œè¿”å›ždoubleåž‹ floor(-5.2) = -6
+* pow(double r, double p) è¿”å›žr<sup>p</sup>
+* sqrt(double x) è¿”å›žç®—æœ¯å¹³æ–¹æ ¹
+* log(double) è¿”å›žä»¥è‡ªç„¶å¯¹æ•°ä¸ºåº•çš„å¯¹æ•° log(1.0) = 0.000000 è‹¥åº•æ•°ä¸ºå…¶ä»–å€¼ï¼Œåˆ™ä½¿ç”¨æ¢åº•å…¬å¼è½¬æ¢ä¸ºä»¥è‡ªç„¶å¯¹æ•°ä¸ºåº•ã€‚log<sub>a</sub>b = log<sub>e</sub>b / log<sub>e</sub>a
+* sin(double), sin(double), tan(double) å‚æ•°éœ€ä¸ºå¼§åº¦åˆ¶. piçš„ç²¾ç¡®å€¼ä¸º asin(-1.0)
+* round(double) è¿”å›žå››èˆäº”å…¥çš„doubleåž‹æ•´æ•°ï¼Œå¯ä»¥ä½¿ç”¨(int)å–æ•´ã€‚
+å¦‚æžœæ•°ç»„ä¸€å¼€å§‹æ²¡æœ‰èµ‹åˆå€¼ï¼Œæ•°ç»„ä¸­çš„æ¯ä¸ªå…ƒç´ éƒ½ä¼šæ˜¯ä¸€ä¸ªéšæœºæ•°ã€‚int a[10] = {0} or int a[10] = {} å°†æ‰€æœ‰å…ƒç´ åˆå§‹åŒ–ä¸º0.  
+å¦‚æžœæ•°ç»„è¾ƒå¤§ï¼ˆ10<sup>6</sup>ï¼‰ï¼Œåº”å°†æ•°ç»„å®šä¹‰åœ¨ä¸»å‡½æ•°å¤–ã€‚  
+ä½¿ç”¨memsetå¯¹æ•°ç»„å…ƒç´ èµ‹ç›¸åŒåˆå€¼ï¼š#include <cstring> memset(æ•°ç»„åï¼Œå€¼ï¼Œsizeof(æ•°ç»„å)) æ­¤æ–¹æ³•åªå»ºè®®èµ‹0æˆ–-1.  
+gets(), puts()ç”¨äºŽè¾“å…¥è¾“å‡ºä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œè¯†åˆ«\nä½œä¸ºç»“æŸæ ‡å¿—ã€‚  
+ä½¿ç”¨ä»¥ä¸‹å‡½æ•°æ—¶éœ€è¦åœ¨å¼€å¤´åŠ  #include <cstring>
+* strlen(å­—ç¬¦æ•°ç»„) å¾—åˆ°å­—ç¬¦æ•°ç»„ç¬¬ä¸€ä¸ª\0å‰å­—ç¬¦çš„ä¸ªæ•°
+* strcmp(å­—ç¬¦æ•°ç»„1, å­—ç¬¦æ•°ç»„2) æ ¹æ®å­—å…¸åºæ¯”è¾ƒï¼Œè‹¥æ•°ç»„1<æ•°ç»„2ï¼Œåˆ™è¿”å›žè´Ÿæ•´æ•°ï¼›ç›¸åŒåˆ™è¿”å›ž0ï¼›>åˆ™è¿”å›žæ­£æ•´æ•°ã€‚ 
+* strcpy(å­—ç¬¦æ•°ç»„1, å­—ç¬¦æ•°ç»„2) æŠŠå­—ç¬¦æ•°ç»„2èµ‹å€¼ç»™å­—ç¬¦æ•°ç»„1ï¼ŒåŒ…æ‹¬æœ«å°¾\0ã€‚
+* strcat(å­—ç¬¦æ•°ç»„1, å­—ç¬¦æ•°ç»„2) æŠŠå­—ç¬¦æ•°ç»„2æŽ¥åˆ°å­—ç¬¦æ•°ç»„1åŽã€‚
+sscanf(str, "%d", &n); æŠŠstrçš„å†…å®¹ä»¥%dçš„å½¢å¼æ”¾å…¥nä¸­ã€‚
+sprintf(str, "%d", n); æŠŠnçš„å†…å®¹ä»¥%dçš„å½¢å¼æ”¾å…¥strä¸­ã€‚printf("%s", str);å°†strè¾“å‡ºã€‚  
+æ•°ç»„ä½œä¸ºå‚æ•°ï¼Œæ•°ç»„çš„ç¬¬ä¸€ç»´ä¸éœ€è¦å¡«å†™é•¿åº¦ï¼Œè°ƒç”¨æ—¶åªå¡«æ•°ç»„åã€‚ä¸”å‡½æ•°ä¸­å¯¹æ•°ç»„çš„ä¿®æ”¹å°±æ˜¯å¯¹åŽŸæ•°ç»„çš„ä¿®æ”¹ã€‚  
+æ•°ç»„ä¸å¯ä»¥ä½œä¸ºè¿”å›žç±»åž‹ã€‚  
+æŒ‡é’ˆå˜é‡ç”¨æ¥å­˜æ”¾æŒ‡é’ˆã€‚ç»™æŒ‡é’ˆå˜é‡èµ‹å€¼çš„ä¸€èˆ¬æ–¹å¼æ˜¯å°†å˜é‡çš„åœ°å€å–å‡ºæ¥ï¼Œèµ‹ç»™å¯¹åº”ç±»åž‹çš„æŒ‡é’ˆå˜é‡ã€‚int* p = &a; -> a==*p  
+å¯¹äºŽä¸€ä¸ªint*åž‹çš„æŒ‡é’ˆå˜é‡pæ¥è¯´ï¼Œp+1æ˜¯æŒ‡pæ‰€æŒ‡çš„intåž‹å˜é‡çš„ä¸‹ä¸€ä¸ªintåž‹å˜é‡çš„åœ°å€ã€‚  
+å¯¹äºŽintåž‹æ•°ç»„ï¼Œå…¶ä¸­çš„å…ƒç´ åœ¨åœ°å€ä¸Šéƒ½æ˜¯è¿žç»­çš„ã€‚å–åœ°å€ï¼š&arr[i]  
+æ•°ç»„åç§°å¯ä»¥ä½œä¸ºé¦–ä¸ªå…ƒç´ çš„åœ°å€ä½¿ç”¨ï¼Œå³ arr = &arr[0], arr+i = &arr[i]  
+ä¸¤ä¸ªintåž‹æŒ‡é’ˆç›¸å‡ï¼Œå¾—åˆ°çš„ç»“æžœæ˜¯ä¸¤ä¸ªæŒ‡é’ˆä¹‹é—´å·®äº†å‡ ä¸ªintå…ƒç´ ï¼Œè€Œéžåœ°å€ç›´æŽ¥ç›¸å‡ã€‚  
+æŒ‡é’ˆå˜é‡ä½œä¸ºå‡½æ•°å‚æ•°ï¼Œå¦‚æžœè¯¥æŒ‡é’ˆå¯¹åº”çš„å…ƒç´ åœ¨å‡½æ•°ä¸­è¢«ä¿®æ”¹ï¼Œè¯¥å…ƒç´ å°±çœŸçš„è¢«ä¿®æ”¹äº†ã€‚  
+å¼•ç”¨çš„ä½œç”¨æ˜¯ç»™åŽŸå˜é‡èµ·åˆ«åï¼Œä¸äº§ç”Ÿå‰¯æœ¬ï¼Œå¯¹å¼•ç”¨çš„æ“ä½œå°±æ˜¯å¯¹åŽŸå˜é‡çš„æ“ä½œã€‚  
+æž„é€ å‡½æ•°ï¼šä¸éœ€è¦è¿”å›žç±»åž‹ï¼Œå‡½æ•°åä¸Žç»“æž„ä½“åç›¸åŒã€‚  
+é¿å…æµ®ç‚¹æ•°è¯¯å·®ï¼š
 ```
 const double eps=1e-8;
 const double pi=acos(-1.0);
@@ -67,18 +67,19 @@ const double pi=acos(-1.0);
 #define MoreEqu(a,b) (((a)-(b))>(-eps))
 #define LessEqu(a,b) (((a)-(b))<(eps))
 ```
-¶àµã²âÊÔµÄÈýÖÖ¶ÁÊý¾Ý·½Ê½£º
-* Î´¸ø¶¨ÊäÈëµÄ½áÊøÌõ¼þ£ºwhile...EOF
+å¤šç‚¹æµ‹è¯•çš„ä¸‰ç§è¯»æ•°æ®æ–¹å¼ï¼š
+* æœªç»™å®šè¾“å…¥çš„ç»“æŸæ¡ä»¶ï¼šwhile...EOF
 ```
 while(scanf("%d", &n) != EOF) {...}
 while(scanf("%s", str) != EOF) {...} \\string_1
 while(gets(str) != NULL) {...} \\ string_2
 ```
-* µ±ÊäÈëÂú×ãÄ³Ìõ¼þÊ±ÖÕÖ¹£ºwhile...break£¨ÔÚwhileÄÚ²¿ÅÐ¶ÏÊäÈëÊÇ·ñÂú×ãÖÕÖ¹Ìõ¼þ£¬Âú×ãÔòbreak£©
-```while(scanf("%d %d", &a, &b), a||b) {...} \\ Èôa,bÖÁÉÙÒ»¸ö²»ÎªÁã£¬Ñ­»·¼ÌÐø
-* ÊäÈëÊ×ÐÐ¸ø³ö²âÊÔÊý¾Ý×éÊý£¬ÔÙ¸ø³ö¸÷×éÊý¾Ý£ºwhile(T--) {...}
+* å½“è¾“å…¥æ»¡è¶³æŸæ¡ä»¶æ—¶ç»ˆæ­¢ï¼šwhile...breakï¼ˆåœ¨whileå†…éƒ¨åˆ¤æ–­è¾“å…¥æ˜¯å¦æ»¡è¶³ç»ˆæ­¢æ¡ä»¶ï¼Œæ»¡è¶³åˆ™breakï¼‰
+```while(scanf("%d %d", &a, &b), a||b) {...} \\ è‹¥a,bè‡³å°‘ä¸€ä¸ªä¸ä¸ºé›¶ï¼Œå¾ªçŽ¯ç»§ç»­
+* è¾“å…¥é¦–è¡Œç»™å‡ºæµ‹è¯•æ•°æ®ç»„æ•°ï¼Œå†ç»™å‡ºå„ç»„æ•°æ®ï¼šwhile(T--) {...}
 ```
 scanf("%d", &T);
-while(T--) {...} \\Ã¿´ÎÑ­»·½â¾öÒ»×éÊý¾ÝµÄÊäÈëºÍÊä³ö
+while(T--) {...} \\æ¯æ¬¡å¾ªçŽ¯è§£å†³ä¸€ç»„æ•°æ®çš„è¾“å…¥å’Œè¾“å‡º
 ```
-
+äºŒåˆ†æŸ¥æ‰¾å–midæ—¶ï¼Œä¸€èˆ¬ä½¿ç”¨ mid = left+(right-left)/2 ä»¥é¿å…æº¢å‡º  
+if (a%2==1) å¯ä»¥ç®€å†™ä¸º if (a&1), å³å°†aå’Œ1æŒ‰ä½ä¸Žï¼Œä»¥ç¡®å®šaçš„æœ«ä½æ˜¯å¦ä¸º1. 
