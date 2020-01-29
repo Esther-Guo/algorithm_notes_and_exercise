@@ -1,4 +1,3 @@
-//尚未通过
 // http://codeup.cn/problem.php?cid=100000588&pid=11
 
 /*
