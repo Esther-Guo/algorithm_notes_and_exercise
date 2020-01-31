@@ -16,7 +16,8 @@ int main() {
 			int sum = 1;
 			for (int i=2;i<=sqr;i++){
 				if (k%i == 0){
-					sum += (i+k/i);
+					if (i != k/i) sum += (i+k/i); 
+					else sum += i; // 避免重复加
 				}
 			}
 			if (sum == k) {
