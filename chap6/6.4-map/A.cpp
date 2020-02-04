@@ -1,4 +1,4 @@
-// http://codeup.cn/problem.php?cid=100000598&pid=0 
+// http://codeup.cn/problem.php?cid=100000599&pid=0 
 
 /*
 注意getline读入一行字符的方式，遇回车终止。
