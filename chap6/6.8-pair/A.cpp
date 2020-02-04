@@ -1,4 +1,4 @@
-// http://codeup.cn/problem.php?cid=100000563&pid=0
+// http://codeup.cn/problem.php?cid=100000603&pid=0
 
 /*
 数学知识不牢固！重心坐标是三点坐标的平均值。重心将每条中线的三等分点。
