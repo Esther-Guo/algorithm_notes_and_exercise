@@ -9,7 +9,8 @@
 [x]chap5-5.1-C
 [x]chap5-5.6-C
 []chap5-5.6-D
-[]chap6-6.2-A
+[x]chap6-6.2-A
+[x]chap6-6.4-A
 
 ### 经典题目
 [x]日期处理：chap3-3.4-A
