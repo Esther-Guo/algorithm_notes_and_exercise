@@ -11,9 +11,12 @@
 []chap5-5.6-D
 [x]chap6-6.2-A
 [x]chap6-6.4-A
-[]chap6-6.7-A
+[x]chap6-6.7-A
+
 
 ### 经典题目
 [x]日期处理：chap3-3.4-A
 [x]进制转换：chap3-3.5-A(除基取余)
 [x]递归：chap4-4.3 permutation
+[x]chap7-7.3-A(链表基本操作)
+[x]chap7-7.3-E(翻转单链表)
