@@ -17,21 +17,25 @@ bool flag = false; // 是否有可行路线
 
 void search(int s1, int s2, int b[16][16], int p[230][2]) {
     if (s2 > 1 && b[s1][s2 - 1] == 0 && a[s1][s2 - 1] == 1) { // left
+        // 加入路线
         p[cnt][0] = s1;
         p[cnt++][1] = s2 - 1;
+        // 到达终点
         if (s1 == e1 && s2 - 1 == e2) {
             flag = true;
             for (int i = 0; i < cnt; i++) {
                 i ? printf("->(%d,%d)", p[i][0], p[i][1]) : printf("(%d,%d)", p[i][0], p[i][1]);
             }
             printf("\n");
+            // 后退，当前点初始化标记
             b[s1][s2] = 0;
-            cnt -= 2;
+            cnt -= 2; // -2包括终点和当前点
             return;
         }
+        // 下个点不是终点
         else {
-            b[s1][s2 - 1] = 1; 
-            search(s1, s2 - 1, b, p);
+            b[s1][s2 - 1] = 1; // 标记经过
+            search(s1, s2 - 1, b, p); // 在下个点寻找路线 
         }
     }
     if (s1 > 1 && b[s1 - 1][s2] == 0 && a[s1 - 1][s2] == 1) { // up
@@ -88,7 +92,7 @@ void search(int s1, int s2, int b[16][16], int p[230][2]) {
             search(s1 + 1, s2, b, p);
         }
     }
-    b[s1][s2] = 0;
+    b[s1][s2] = 0; // 四个方向均否定，继续回退
     cnt--;
     return;
 }
