@@ -17,6 +17,7 @@
 [x]chap8-8.2-C
 [x]chap9-9.2-D
 [x]chap9-9.7-B
+[x]chap9-9.7-C
 
 ### 经典题目
 [x]日期处理：chap3-3.4-A
