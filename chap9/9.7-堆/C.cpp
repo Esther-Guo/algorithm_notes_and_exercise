@@ -3,6 +3,7 @@
 /*
 永远选择当前最小的两堆相加，需要合并n-1次。
 注意如果每次插入后都重新排序会超时！！
+后附使用优先队列实现（本质还是最小堆）的代码。
 */
 
 #include <cstdio>
@@ -90,3 +91,33 @@ int main() {
     return 0;
 }
 
+// 优先队列实现哈弗曼树
+#include <cstdio>
+#include <queue>
+
+using namespace std;
+
+// 优先队列（小顶堆）
+priority_queue <long long, vector<long long>, greater<long long>> q;
+
+int main() {
+    int n;
+    while(scanf("%d", &n)!=EOF) {
+        long long temp, x, y, ans = 0;
+        for (int i=0; i<n ;i++) {
+            scanf("%lld", &temp);
+            q.push(temp);
+        }
+        while (q.size() > 1) { // 直到仅剩一个结点
+            x = q.top();
+            q.pop();
+            y = q.top();
+            q.pop();
+            q.push(x+y);
+            ans += (x+y);
+        }
+        printf("%lld\n", ans);
+    }
+    
+    return 0;
+}
